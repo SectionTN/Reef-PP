@@ -9,18 +9,19 @@ import {
     createTheme,
     ThemeProvider,
 } from '@mui/material';
+import Link from 'next/link';
 
 const theme = createTheme({
     palette: {
         mode: 'light',
         primary: {
-            main: '#6200ea',
+            main: '#220052',
         },
         secondary: {
-            main: '#03dac6',
+            main: '#028f81',
         },
         background: {
-            default: '#ffffff',
+            default: '#FFF2E6',
         },
         text: {
             primary: '#333333',
@@ -34,7 +35,7 @@ const theme = createTheme({
         },
         h5: {
             fontWeight: 600,
-            color: '#03dac6',
+            color: '#028f81',
         },
     },
     components: {
@@ -42,7 +43,7 @@ const theme = createTheme({
             styleOverrides: {
                 root: {
                     padding: '16px',
-                    backgroundColor: '#ffffff',
+                    backgroundColor: '#fff8e6',
                     boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.1)',
                     borderRadius: '8px',
                 },
@@ -124,7 +125,7 @@ const PrivacyPolicy = () => {
                             Admob Ads
                         </Typography>
                         <Typography variant="body1" paragraph>
-                            Reef uses Admob Ads to serve advertisements. Admob may collect certain
+                            Reef uses Admob to serve advertisements. Admob may collect certain
                             non-personal information to display relevant ads. Please refer to
                             Admob&apos;s privacy policy for more details on how they collect and use data.
                         </Typography>
@@ -163,7 +164,7 @@ const PrivacyPolicy = () => {
                         </Typography>
                         <Typography variant="body1" paragraph>
                             If you have any questions about this privacy policy, please contact us
-                            at rayensbai2@gmail.com. We are committed to addressing your
+                            at <Link href={"mailto:rayensbai2@gmail.com"}>rayensbai2@gmail.com</Link> We are committed to addressing your
                             questions and resolving any concerns you may have.
                         </Typography>
                     </motion.div>
